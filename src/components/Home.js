@@ -10,9 +10,8 @@ import Spinner from "./Spinner";
 import Thumb from "./Thumb";
 
 const Home = () => {
-  const { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } =
+  const { state, loading, searchTerm, setSearchTerm, setIsLoadingMore } =
     useHomeFetch();
-  console.log(state);
   return (
     <>
       {!searchTerm && state.results[0] && (
